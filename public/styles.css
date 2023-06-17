@@ -1,0 +1,148 @@
+/* #09090E */
+/* #1d202f */
+
+body {
+    margin:0;
+    color: #FFF;
+    background-color: #09090E;  
+    font-family: Readex Pro,Inter,Fira Sans,Helvetica Neue,sans-serif;
+  }
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #000;
+    z-index: 1000;
+}
+
+.main {
+  margin: 100px 50px 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  padding: 75px;
+  text-align: center;
+  font-family: Inter,Fira Sans,Helvetica Neue,sans-serif;
+  font-size: 3.25rem;
+  font-weight: 900;
+  background-color: #0d0d12;
+}
+
+.main p {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 1.25rem;
+}
+
+.logoWrapper {
+  margin: 15px 15px 10px 15px;
+}
+
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 16.5px 25px 16.5px 25px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
+  }
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 1px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+  }
+  
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+  }
+  
+  #menu{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    padding-top:100px;
+    background:rgba(0,0,0,0.98);
+  }
+  
+  #menu li{
+    list-style:none;
+  }
+  #menu a{
+    color: #5dfeb4;
+    display:block;
+    font-size: 32px;
+    text-decoration:none;
+    font-weight: 700;
+  }
+
+  .regLink {
+    margin-bottom:30px;
+    border-bottom: 1.5px solid hsla(0,0%,100%,.15);
+  }
