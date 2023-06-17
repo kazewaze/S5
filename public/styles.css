@@ -17,7 +17,7 @@ main {
 body {
     margin:0;
     color: #FFF;
-    background-color: #09090E;  
+    background-color: #000;  
     font-family: Readex Pro,Inter,Fira Sans,Helvetica Neue,sans-serif;
   }
 
@@ -37,7 +37,6 @@ body {
     color: #fff;
     background-color: #000;
     z-index: 1000;
-    margin-top: -15px;
 }
 
 .main {
