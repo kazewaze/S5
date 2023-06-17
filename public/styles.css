@@ -28,11 +28,11 @@ body {
 }
 
 .main {
-  margin: 100px 50px 100px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
 }
 
 .main h1 {
@@ -125,7 +125,6 @@ body {
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
-    overflow: hidden;
   }
 
   #menu.overlay{
