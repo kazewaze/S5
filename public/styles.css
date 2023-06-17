@@ -132,14 +132,15 @@ body {
     opacity: 1;
     padding-top:100px;
     background:rgba(0,0,0,0.98);
+    margin: 0;
   }
   
   #menu li{
     list-style:none;
   }
-  #menu a{
+  #menu a {
+    text-align: center;
     color: #5dfeb4;
-    display:block;
     font-size: 32px;
     text-decoration:none;
     font-weight: 700;
